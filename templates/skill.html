@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skill</title>
+</head>
+<body>
+<h1>Найдено кандидатов {{ len_item }}</h2>
+{% for item in items %}
+    <p><a href="/candidate/{{ item['id'] }}">{{ item['name'] }}</a></p>
+{% endfor %}
+
+</body>
+</html>
